@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000024;
+}
+
+.logos {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+.bg {
+    background-image: url("hero-bg.jpg");
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-name {
+    margin-top: 20vh;
+    margin-left: 5%;
+}
+
+.name1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    margin-left: 60px;
+}
+
+.nav-link:hover {
+    background-color: #303030;
+    border-radius: 50px;
+}
+
+.sub {
+    
+    font-size: 3rem;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-size: 75px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #030122);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+.dp {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    opacity: 0.5;
+}
+
+.dp img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.photo {
+    height: auto;
+    width: 100%;
+    max-width: 550px;
+    opacity: 0.8;
+    display: block;
+    margin: auto;
+}
+
+.abou {
+    margin-left: 600px;
+    margin-bottom: 100px;
+    text-decoration: underline;
+}
+
+.about-li li {
+    color: white;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.about {
+    background-color: #0a101e;
+    padding: 50px 0;
+}
+
+.ab-text {
+    margin-bottom: 30px;
+}
+
+.skill img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+.ab-p {
+    width: 100ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+#skill h2 {
+    text-decoration: underline;
+}
+
+.skill-inner {
+    background-color: #0d162b;
+    border: 3px solid rgb(35, 35, 44);
+    width: 180px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.skill-inner:hover {
+    transform: translateY(-10px);
+    background-color: #000308;
+    color: white;
+}
+
+.mySkil {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.skill-num {
+    background-color: none;
+    text-align: center;
+    color: rgb(95, 113, 128);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.project {
+    padding: 50px 0;
+    background-color: #060627;
+}
+
+.project-head {
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+.project-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.project-img img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #111;
+    text-align: center;
+}
+
+.form1 .form-control {
+    margin-bottom: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.form1 .form-control::placeholder {
+    color: #777;
+}
+
+.form1 .btn {
+    padding: 10px 20px;
+    background-color: #f0ad4e;
+    border: none;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+.form1 .btn:hover {
+    background-color: #ec971f;
+}
+
+.list-unstyled li {
+    margin: 10px 0;
+}
+@media (min-width:  768px){
+
+.navbar-nav{
+    position: fixed;
+}
+}
+@media (max-width: 768px) {
+    .home-name {
+        margin-left: 20px;
+        
+    }
+
+    .name1 {
+        font-size: 2rem;
+    }
+
+    .sub {
+        font-size: 1.5rem;
+    }
+
+    .photo {
+        height: 300px;
+        width: 100%;
+    }
+
+    .dp img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .ab-text {
+        margin-bottom: 30px;
+    }
+
+    .skill {
+        flex-direction: column;
+    }
+
+    .skill-inner {
+        margin-bottom: 20px;
+    }
+
+    .project-img {
+        grid-template-columns: 1fr;
+    }
+}
